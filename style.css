@@ -1,0 +1,307 @@
+/* spacing on all sections */
+.section {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+.section:last-of-type {
+    padding-bottom: 4rem;
+}
+
+/* hero background image */
+.bgimage {
+    height: 100vh;
+    background: url('images/heroImage.jpeg') no-repeat center center/cover;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.bgimage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* hero text styles */
+.hero_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+    padding: 1rem;
+    width: 80%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    white-space: pre-line;
+    display: inline-block;
+}
+
+/* heero title styling */
+.hero_title {
+    font-size: 7.5rem;
+    font-weight: bold;
+}
+
+/* hero description styling */
+.hero_desc {
+    font-size: 2rem;
+}
+
+/* improve text size on smaller screens */
+@media (max-width: 768px) {
+    .hero_title {
+        font-size: 3rem;
+    }
+    .hero_desc {
+        font-size: 1.5rem;
+    }
+}
+
+/* image adjustments */
+.image_about {
+    width: 100%;
+}
+
+/* dark navigation bar */
+.navbarDark {
+    background: #000;
+}
+
+/* social media icons */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover, 
+.fa-twitch:hover {
+    color: #fff;
+}
+.fab {
+    color: #000000;
+}
+
+/* sections with scroll animation */
+#skills, #portfolio, #about, #contact, #projects {
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+#about {
+    text-align: left;
+}
+
+/* section headings */
+#skills h1, #skills h2, 
+#portfolio h1, #about h1, 
+#contact h1, #projects h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* section headings hover effect */
+#skills h1:hover, #skills h2:hover, 
+#portfolio h1:hover, #about h1:hover, 
+#contact h1:hover, #projects h1:hover {
+    color: #4CAF50;
+}
+
+/* skill item styling */
+.skill-item {
+    margin-top: 20px;
+}
+
+/* skill bar styling */
+.skill-bar {
+    height: 25px;
+    border-radius: 15px;
+    background-color: #444;
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    position: relative;
+    transition: background 0.9s ease-in-out;
+}
+
+/* pogress bar animation */
+.progress-bar {
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: width 0.9s ease-in-out, background 0.3s ease-in-out;
+}
+
+/* hover effect to animate skill bars */
+.skill-item:hover .progress-bar {
+    width: 100% !important;
+    background-color: #4CAF50;
+    color: #000;
+}
+
+/* hover effect for skill titles */
+.skill-item:hover h4 {
+    color: #4CAF50;
+    transition: color 0.6s ease-in-out;
+}
+
+/* Scroll Animation */
+.scroll-animate {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Projects section styling */
+#portfolio {
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Projects Grid */
+.protfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch; /* ensures equal height */
+}
+
+/* Projects Cards */
+.card {
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Footer styles */
+.footer {
+    background-color: #808080;
+    text-align: center;
+}
+.section {
+    overflow: visible !important;
+    min-height: 100vh;
+}
+body {
+    background-color: #1a1a1a; 
+    color: white;
+}
+/* Education Section Styling */
+#education {
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#education.scroll-animate {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+#education h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+#education h1:hover {
+    color: #4CAF50;
+}
+
+#education .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#education .table {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    background-color: #222;
+    color: #fff;
+}
+
+#education .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#education .table-dark th,
+#education .table-dark td {
+    border-color: #444;
+}
+
+#education .table-dark th {
+    background-color: #333;
+    color: #eaeeea;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+#education .table-dark td {
+    padding: 15px;
+}
+
+#education .table-dark tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#education .table-dark tbody tr:hover td {
+    color: #4CAF50;
+    transition: color 0.3s ease-in-out;
+}
