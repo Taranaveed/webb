@@ -12,5 +12,4 @@ This is my personal portfolio website for 2025. It showcases my skills, projects
 ![contactme](https://github.com/user-attachments/assets/f05f89fd-7aea-406b-aff3-ec18dab828ac)
 
 ## Live Demo
-Check out the live demo of my portfolio: [Portfolio 2025 Live Demo](https://Taranav![home](https://github.com/user-attachments/assets/e9a5a29c-9e88-4e7a-824a-9391031dc364)
-eed.github.io/portfolio-2025)
+Check out the live demo of my portfolio:https://taranaveed.github.io/webb/
